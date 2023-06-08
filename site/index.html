@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Ayscough</title>
+    
+    <meta name="description" content="John Ayscough's artist portfolio.">
+    <meta name="keywords" content="john, ayscough, artist, art, portfolio">
+    <meta name="author" content="John Ayscough">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1 class="name">JOHN AYSCOUGH</h1>
+
+        <ul class="links">
+            <li><a href="#painting" onclick="updateCategory('painting'); updateImage();">Painting</a></li>
+            <li><a href="#sculpture" onclick="updateCategory('sculpture'); updateImage();">Sculpture</a></li>
+            <li><a href="#ots" onclick="updateCategory('ots'); updateImage();">On the streets</a></li>
+        </ul>
+    </header>
+
+    <content>
+        <div id="imageGallery">
+            <img src="images/painting/001.jpg" id="galleryImage" />
+            
+            <div id="buttons" class="buttons">
+                <button id="prevButton">Previous</button>
+                <button id="nextButton">Next</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </content>
+   
+    <footer>
+        <p>&copy; John Ayscough (2023). All rights reserved.</p>
+        <p><a href="mailto:johnayscough@hotmail.com">johnayscough@hotmail.com</a></p>
+    </footer>
+</body>
+
+</html>
