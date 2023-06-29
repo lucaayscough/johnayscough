@@ -67,15 +67,6 @@ function Content()
     }
   };
 
-  const imgRef = useRef();
-  const imgContainerRef = useRef();
-  
-  useEffect(() => {
-    if (imgRef.current && imgContainerRef.current) {
-      imgContainerRef.current.style.height = `${imgRef.current.offsetHeight}px`;
-    }
-  });
-
   return(
     <main>
       <div class="imageGallery">
@@ -83,12 +74,8 @@ function Content()
           <button className="prevButton" onClick={goToPrevImage}></button>
           <button className="nextButton" onClick={goToNextImage}></button>
         </div>
-        
-        <div className="imageGalleryContainer" ref={imgContainerRef}>
 
-              <img src={img_url} className="galleryImage" ref={imgRef} />
-
-        </div>
+        <img src={img_url} className="galleryImage" />
       </div>
     </main> 
   );
