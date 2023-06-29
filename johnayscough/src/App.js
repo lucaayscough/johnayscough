@@ -12,9 +12,8 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/painting" element={<Content page="painting" />} />
-          <Route path="/sculpture" element={<Content page="sculpture" />} />
-          <Route path="/ots" element={<Content page="ots" />} />
+          <Route path="/:page/" element={<Content />} />
+          <Route path="/:page/:image" element={<Content />} />
         </Routes>
       </BrowserRouter>
 
