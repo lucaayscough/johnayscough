@@ -12,6 +12,7 @@ function App() {
         <Header />
 
         <Routes>
+          <Route path="/" element={<Content />} />
           <Route path="/:page/" element={<Content />} />
           <Route path="/:page/:image" element={<Content />} />
         </Routes>

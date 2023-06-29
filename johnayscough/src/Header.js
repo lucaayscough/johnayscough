@@ -7,9 +7,10 @@ function Header() {
 
       <nav>
         <ul className="links">
-          <li><Link to="/painting/001">Painting</Link></li>
-          <li><Link to="/sculpture/001">Sculpture</Link></li>
-          <li><Link to="/ots/001">On the streets</Link></li>
+          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/painting">Painting</Link></li>
+          <li><Link to="/sculpture">Sculpture</Link></li>
+          <li><Link to="/ots">On the streets</Link></li>
         </ul>
       </nav>
     </header>

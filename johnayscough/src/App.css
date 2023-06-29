@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
 }
@@ -39,12 +39,12 @@ header {
     overflow: none;
 }
 
-content {
+main {
     flex: 1;
     width: 100vw;
 }
 
-content img {
+main img {
     width: 100vw;
 }
 
@@ -89,18 +89,51 @@ li {
     margin-bottom: -5px;
 }
 
-.buttons {
-   display: flex;
-   justify-content: center; 
+.imageGallery {
+    position: relative;
 }
 
-#prevButton, #nextButton {
-    font-family: "Quasimoda";
-    font-size: 18px;
-    padding: 10px 20px;
-    margin: 0 10px;
+.buttons button {
+    height: 120px;
+    width: 120px;
     border: none;
-    color: black;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
-    background-color: white;
+    opacity: 50%;
+    transition: 0.4s ease;
+}
+
+.buttons button:hover{
+    opacity: 100%;
+}
+
+.prevButton {
+    left: 0;
+    background-image: url('/public/assets/arrow_left.png');
+ }
+
+.nextButton {
+    right: 0;
+    background-image: url('/public/assets/arrow_right.png');
+}
+
+.fade-enter {
+    opacity: 0;
+}
+  
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
 }
