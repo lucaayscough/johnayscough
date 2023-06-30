@@ -1,5 +1,4 @@
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import React, { useRef, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
 const portfolio_data = [
@@ -78,7 +77,7 @@ function Content()
         <div className="galleryImageContainer">
           <TransitionGroup>
             <CSSTransition key={img_url} classNames="fade" timeout={300}>
-              <img src={img_url} className="galleryImage" />
+              <img alt="" src={img_url} className="galleryImage" />
             </CSSTransition>
           </TransitionGroup>
         </div>

@@ -1,5 +1,4 @@
-import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
-import logo from './logo.svg';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Footer from "./Footer.js";
 import Content from "./Content.js";
 import Header from "./Header.js";
