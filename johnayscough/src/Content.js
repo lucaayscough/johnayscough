@@ -75,7 +75,13 @@ function Content()
           <button className="nextButton" onClick={goToNextImage}></button>
         </div>
 
-        <img src={img_url} className="galleryImage" />
+        <div className="galleryImageContainer">
+          <TransitionGroup>
+            <CSSTransition key={img_url} classNames="fade" timeout={300}>
+              <img src={img_url} className="galleryImage" />
+            </CSSTransition>
+          </TransitionGroup>
+        </div>
       </div>
     </main> 
   );

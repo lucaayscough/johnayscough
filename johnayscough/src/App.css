@@ -93,6 +93,18 @@ li {
     position: relative;
 }
 
+.galleryImageContainer {
+    width: 100%;
+    padding-bottom: 64.24%;
+}
+
+.galleryImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .buttons button {
     height: 120px;
     width: 120px;
