@@ -8,15 +8,19 @@ const portfolio_data = [
   },
   {
     page: 'painting',
-    num_images: 12,
+    num_images: 14,
   },
   {
     page: 'sculpture',
-    num_images: 9,
+    num_images: 11,
+  },
+  {
+    page: 'performance',
+    num_images: 2,
   },
   {
     page: 'ots',
-    num_images: 12,
+    num_images: 26,
   }
 ];
 

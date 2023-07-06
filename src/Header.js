@@ -11,6 +11,7 @@ function Header() {
           <li><Link to="/painting">Painting</Link></li>
           <li><Link to="/sculpture">Sculpture</Link></li>
           <li><Link to="/ots">On the streets</Link></li>
+          <li><Link to="/performance">Performance</Link></li>
         </ul>
       </nav>
     </header>
