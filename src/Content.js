@@ -70,13 +70,21 @@ function Content()
     }
   };
 
+  let showButtons = true;
+
+  if (page === "home") {
+    showButtons = false;
+  }
+
   return(
     <main>
       <div class="imageGallery">
-        <div className="buttons">
-          <button className="prevButton" onClick={goToPrevImage}></button>
-          <button className="nextButton" onClick={goToNextImage}></button>
-        </div>
+        {showButtons && 
+          <div className="buttons">
+            <button className="prevButton" onClick={goToPrevImage}></button>
+            <button className="nextButton" onClick={goToNextImage}></button>
+          </div>
+        }
 
         <div className="galleryImageContainer">
           <TransitionGroup>
